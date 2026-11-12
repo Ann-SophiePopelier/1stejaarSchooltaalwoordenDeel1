@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Schooltaalwoorden oefenen – les 10</title>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2fb;--card:#fff;--ink:#17203d;--mut:#5a6683;--line:#d3dbee;--acc:#3556e0;--accd:#2742b8;--on:#fff;--hl:#ffd84d;--ok:#12794f;--okb:#dff3e8;--bad:#b3360a;--badb:#fde8de;--w1b:#e3ebff;--w1:#1f3fb0;--w2b:#dff3e8;--w2:#11663f;--w3b:#ffeccc;--w3:#8a4b00;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1426;--card:#171f3a;--ink:#e9eefc;--mut:#a3aecb;--line:#2b3556;--acc:#8aa4ff;--accd:#5b76d6;--on:#0e1426;--ok:#5fd6a0;--okb:#14322a;--bad:#ff9a6e;--badb:#3a1f17;--w1b:#22305f;--w1:#b9c9ff;--w2b:#173a2c;--w2:#8fe0b6;--w3b:#4a3516;--w3:#ffd08a}}
+:root[data-theme="dark"]{--bg:#0e1426;--card:#171f3a;--ink:#e9eefc;--mut:#a3aecb;--line:#2b3556;--acc:#8aa4ff;--accd:#5b76d6;--on:#0e1426;--ok:#5fd6a0;--okb:#14322a;--bad:#ff9a6e;--badb:#3a1f17;--w1b:#22305f;--w1:#b9c9ff;--w2b:#173a2c;--w2:#8fe0b6;--w3b:#4a3516;--w3:#ffd08a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.55 "Atkinson Hyperlegible",system-ui,"Segoe UI",Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1,h2,summary,.go{font-family:Fredoka,"Atkinson Hyperlegible",system-ui,sans-serif}
+h1{display:inline-block;font-size:clamp(1.8rem,6vw,2.5rem);font-weight:600;line-height:1.15;margin:0;padding:0 .12em;background:linear-gradient(transparent 62%,var(--hl) 62% 90%,transparent 90%)}
+.sub{color:var(--mut);margin:6px 0 20px}
+.box{background:var(--card);border:2px solid var(--line);border-radius:18px;box-shadow:0 5px 0 var(--line);margin-bottom:22px}
+details.box{padding:6px 18px 16px}
+summary{cursor:pointer;font-size:1.15rem;font-weight:500;padding:10px 0;list-style-position:inside}
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.col h3{margin:0 0 8px;font:500 .8rem/1.2 "Atkinson Hyperlegible",sans-serif;color:var(--mut)}
+.col ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.col li{padding:5px 10px;border-radius:9px;font-weight:700;font-size:clamp(.78rem,2.9vw,1rem);overflow-wrap:anywhere}
+.c1 li{background:var(--w1b);color:var(--w1)}.c2 li{background:var(--w2b);color:var(--w2)}.c3 li{background:var(--w3b);color:var(--w3)}
+#card{padding:24px 22px}
+.top{display:flex;justify-content:space-between;color:var(--mut);font-size:.9rem;margin-bottom:6px}
+.bar{height:10px;background:var(--line);border-radius:6px;overflow:hidden;margin-bottom:22px}
+.bar i{display:block;height:100%;background:var(--acc);width:0;transition:width .3s}
+.intro{color:var(--mut);margin:0 0 10px}
+.q{font-size:clamp(1.25rem,4.5vw,1.6rem);line-height:1.5;margin:0 0 20px}
+mark{background:var(--hl);color:#17203d;padding:1px 6px;border-radius:5px;font-weight:700}
+.gap{display:inline-block;min-width:96px;border-bottom:4px solid var(--acc);margin:0 4px;transform:translateY(2px)}
+input{font:inherit;font-size:1.25rem;width:100%;padding:12px 14px;border:2px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink)}
+input:focus{border-color:var(--acc);outline:none}
+input:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.go{font-size:1.1rem;font-weight:600;border:0;background:var(--acc);color:var(--on);padding:12px 24px;border-radius:12px;cursor:pointer;box-shadow:0 4px 0 var(--accd)}
+.go:active{transform:translateY(3px);box-shadow:0 1px 0 var(--accd)}
+.fb{margin-top:16px;padding:12px 16px;border-radius:12px;display:none;font-weight:700}
+.fb.ok{display:block;background:var(--okb);color:var(--ok)}.fb.bad{display:block;background:var(--badb);color:var(--bad)}
+.fb span{display:block;font-weight:400;margin-top:4px}
+.score{font:600 3.4rem/1 Fredoka,sans-serif;margin:8px 0}
+.score small{font-size:1.5rem;color:var(--mut)}
+.res{margin-top:22px;border-top:2px solid var(--line);padding-top:16px}
+.res label{display:block;font-size:.9rem;color:var(--mut);margin:12px 0 4px}
+.btn2{font:inherit;font-size:1.05rem;border:2px solid var(--line);background:var(--card);color:var(--ink);padding:10px 18px;border-radius:12px;cursor:pointer}
+textarea{font:inherit;font-size:.9rem;width:100%;min-height:170px;margin-top:14px;padding:10px;border:2px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script></head>
+<body><main>
+<h1>Schooltaalwoorden oefenen</h1>
+<p class="sub">Deel 1, les 10</p>
+<details class="box" open><summary>Overzicht van de schooltaalwoorden</summary><div class="cols" id="cols"></div></details>
+<section class="box" id="card" aria-live="polite"></section>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const O=[["Werkwoord","c1",["informeren","selecteren","verantwoorden","vervangen","vervolledigen","verzinnen"]],["Zelfstandig naamwoord","c2",["de bewering","het criterium","de formulering","de instructie","de situatie"]],["Bijvoeglijk naamwoord","c3",["automatisch","interessant","uitgebreid","uniek"]]];
+$('#cols').innerHTML=O.map(c=>'<div class="col '+c[1]+'"><h3>'+c[0]+'</h3><ul>'+c[2].map(w=>'<li>'+w+'</li>').join('')+'</ul></div>').join('');
+const P=[
+["Voor je spreekbeurt moet je een onderwerp ___. Kies iets dat je zelf leuk vindt.","selecteren"],
+["De school ___ de ouders met een brief over de schoolreis.","informeert"],
+["De leerling moet ___ waarom hij te laat is.","verantwoorden"],
+["De juf is ziek. Een collega komt haar ___.","vervangen"],
+["Er ontbreken woorden in de tekst. Je moet de tekst ___.","vervolledigen"],
+["Hij ___ een verhaal over een spook, maar dat bestaat niet.","verzint"],
+["De ___ dat de aarde plat is, klopt niet.","bewering"],
+["Een ___ voor deze opdracht is dat je geen fouten maakt.","criterium"],
+["De ___ van de vraag is duidelijk. Iedereen begrijpt ze.","formulering"],
+["De juf geeft een duidelijke ___ bij de opdracht.","instructie"],
+["De ___ wordt vervelend als twee kinderen hetzelfde spel willen spelen.","situatie"],
+["De deur gaat ___ open als je op de knop drukt.","automatisch"],
+["Het bezoek aan de boerderij was heel ___. We stelden veel vragen.","interessant"],
+["De uitleg van de gids was niet kort, maar heel ___.","uitgebreid|uitgebreide"],
+["Dit schilderij is ___. Er bestaat maar één.","uniek"],
+["Mijn mama gaat me [inlichten] over het plan.","informeren"],
+["Mag ik zelf [uitkiezen] wie in mijn groepje zit?","selecteren"],
+["Je moet [uitleggen] waarom je te laat bent.","verantwoorden"],
+["Een andere juf komt je [aflossen].","vervangen"],
+["Je moet de zin [aanvullen] met de ontbrekende woorden.","vervolledigen"],
+["Hij gaat een smoes [bedenken].","verzinnen"],
+["Zijn [uitspraak] klopt niet.","bewering"],
+["Je moet aan elke [voorwaarde] voldoen.","criterium|criteria"],
+["De [omschrijving] van de vraag is onduidelijk.","formulering"],
+["Lees eerst het [bevel] bij de opdracht.","instructie|instructies"],
+["Het boek is [boeiend].","interessant"],
+["Het filmpje was niet saai, maar heel ___.","interessant"],
+["Mijn verslag is niet beknopt, maar ___.","uitgebreid|uitgebreide"],
+["Het was geen alledaagse dag, maar een ___ dag.","unieke|uniek"],
+["Je moet het niet zelf doen. Het gaat ___.","automatisch"],
+["Op deze website staat veel ___ over dieren.","informatie"],
+["De ___ van de spelers gebeurde eerlijk.","selectie"],
+["Je hebt geen goede ___ voor je gedrag.","verantwoording"],
+["De juf is ziek. Een ___ geeft les.","vervanger"],
+["Je zin is nog niet ___. Er mist een woord.","volledig"],
+["Dat spookverhaal is niet echt gebeurd. Het is een ___.","verzinsel"],
+["Hij ___ dat hij zijn huiswerk gemaakt heeft.","beweert"],
+["Hoe zal ik mijn vraag ___?","formuleren"],
+["Probeer de plaats en de tijd van het verhaal te ___.","situeren"],
+["Door veel te oefenen ga je dit ___.","automatiseren"],
+["Ik heb veel ___ voor dieren.","interesse"],
+["Zij is ___ in sport.","geïnteresseerd|geinteresseerd"],
+["De school wil de speelplaats ___.","uitbreiden"]];
+
+const n=s=>s.toLowerCase().trim().replace(/\s+/g,' ').replace(/^(de|het|een|zich)\s+/,'');
+let q,total,done,f1,miss,it,lock,log=[],csz='';
+function home(){$('#card').innerHTML='<h2 style="margin:0 0 6px">Klaar om te oefenen?</h2><p class="intro">Typ telkens het woord dat in de zin past. Het overzicht helpt je.</p><div class="row"><button class="go" data-c="15">Korte reeks (15 vragen)</button><button class="go" data-c="99">Alle vragen ('+P.length+')</button></div>'}
+$('#card').onclick=e=>{if(e.target.dataset.c)start(+e.target.dataset.c)};
+function start(c){q=P.map(a=>({t:a[0],a:a[1].split('|'),s:0}));
+ for(let i=q.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[q[i],q[j]]=[q[j],q[i]]}
+ q=q.slice(0,c);total=q.length;done=0;f1=0;miss=new Set();log=[];csz=c>=P.length?'alle vragen ('+total+')':'korte reeks ('+total+' vragen)';show()}
+function sum(){const nm=$('#nm').value.trim(),kl=$('#kl').value.trim(),d=new Date().toLocaleDateString('nl-BE');
+ let t='Schooltaalwoorden les 10 - resultaat\nNaam: '+(nm||'...')+(kl?'\nKlas: '+kl:'')+'\nDatum: '+d+'\nReeks: '+csz+'\nMeteen juist: '+f1+' van '+total;
+ if(log.length){t+='\n\nMoeilijke woorden:';log.forEach(x=>{t+='\n- '+x.t.replace('___','...').replace(/[\[\]]/g,'')+'\n  Juist: '+x.a[0]+'  |  Jouw antwoord: '+x.w.join(', ')})}else t+='\n\nGeen enkele fout.';
+ $('#tx').value=t;return t}
+function msgR(c,m){const f=$('#rf');f.className='fb '+c;f.textContent=m}
+async function cpy(){const t=sum();try{await navigator.clipboard.writeText(t);msgR('ok','✓ Gekopieerd. Plak de tekst in een bericht aan je leerkracht.')}catch(e){$('#tx').select();msgR('bad','Kopiëren lukte niet. Selecteer de tekst hieronder en kopieer ze zelf.')}}
+async function mkpdf(){const nm=$('#nm').value.trim();if(!nm){msgR('bad','Typ eerst je voornaam en naam.');$('#nm').focus();return}
+ const t=sum();let dl=null;try{if(typeof claude!=='undefined')dl=await claude.use('downloads')}catch(e){}
+ if(!dl||!window.jspdf){msgR('bad','Een pdf maken lukt hier niet. Gebruik "Kopieer tekst" of maak een schermafbeelding.');return}
+ try{const doc=new window.jspdf.jsPDF({unit:'mm',format:'a4'}),L=t.split('\n');let y=20;
+  doc.setFont('helvetica','bold');doc.setFontSize(16);doc.text(L[0],15,y);y+=10;doc.setFont('helvetica','normal');doc.setFontSize(11);
+  for(const ln of L.slice(1))for(const p of doc.splitTextToSize(ln||' ',180)){if(y>280){doc.addPage();y=20}doc.text(p,15,y);y+=6}
+  const fn=nm.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')||'leerling';
+  await dl.save({filename:'schooltaalwoorden-'+fn+'.pdf',data:doc.output('blob')});
+  msgR('ok','✓ De pdf is klaar. Stuur het bestand door naar je leerkracht.')
+ }catch(e){msgR('bad',e&&e.code=='declined'?'Opslaan geannuleerd.':'De pdf opslaan lukte niet. Gebruik "Kopieer tekst" of maak een schermafbeelding.')}}
+function bar(){return '<div class="top"><span>'+done+' van '+total+'</span></div><div class="bar"><i style="width:'+(done/total*100)+'%"></i></div>'}
+function show(){
+ if(!q.length){$('#card').innerHTML=bar()+'<h2 style="margin:0">Klaar!</h2><p class="score">'+f1+' <small>/ '+total+'</small></p><p>meteen juist.'+(log.length?' Hier oefen je best nog mee: <b>'+esc([...new Set(log.map(x=>x.a[0]))].join(', '))+'</b>.':' Geen enkele fout. Knap!')+'</p><div class="row"><button class="go" id="again">Opnieuw oefenen</button></div><div class="res"><h2 style="margin:0 0 4px;font-size:1.2rem">Resultaat voor je leerkracht</h2><label for="nm">Voornaam en naam</label><input id="nm" autocomplete="name"><label for="kl">Klas</label><input id="kl"><div class="row"><button class="go" id="pdf">Maak pdf</button><button class="btn2" id="cp">Kopieer tekst</button></div><div class="fb" id="rf"></div><textarea id="tx" readonly aria-label="Samenvatting"></textarea></div>';$('#again').onclick=home;$('#pdf').onclick=mkpdf;$('#cp').onclick=cpy;$('#nm').oninput=$('#kl').oninput=sum;sum();return}
+ it=q[0];it.s++;it.e=0;lock=false;
+ const t=it.t.replace('___','<span class="gap"></span>').replace(/\[(.+?)\]/g,'<mark>$1</mark>');
+ $('#card').innerHTML=bar()+'<p class="intro">'+(/\[/.test(it.t)?'Vervang het gekleurde woord door een schooltaalwoord.':'Vul het juiste woord in.')+'</p><p class="q">'+t+'</p><input id="in" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Jouw antwoord"><div class="row"><button class="go" id="go">Controleer</button></div><div class="fb" id="fb"></div>';
+ $('#go').onclick=go;$('#in').onkeydown=e=>{if(e.key=='Enter')go()};$('#in').focus({preventScroll:true})}
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const CL={wv:'werkwoord',zn:'zelfstandig naamwoord',bn:'bijvoeglijk naamwoord'},KS={c1:'wv',c2:'zn',c3:'bn'};
+const BASE={};O.forEach(c=>c[2].forEach(w=>BASE[n(w)]={d:w,k:KS[c[1]]}));
+const M={informeren:'iemand op de hoogte brengen',selecteren:'uit een groep kiezen',verantwoorden:'uitleggen waarom je iets doet',vervangen:'iemand of iets in de plaats stellen van iemand of iets anders',vervolledigen:'iets volledig maken door aan te vullen wat ontbreekt',verzinnen:'iets bedenken dat niet echt bestaat of gebeurd is',bewering:'iets wat iemand zegt en waarvan die persoon beweert dat het waar is',criterium:'iets waarop je let wanneer je iets kiest of zegt wat je ervan vindt',formulering:'de manier waarop je iets zegt of schrijft',instructie:'een uitleg over wat je moet doen',situatie:'wat er op een bepaald moment gebeurt',automatisch:'vanzelf, zonder dat je het zelf hoeft te doen',interessant:'de moeite waard om te bekijken, te lezen of te beluisteren',uitgebreid:'met veel uitleg, informatie of onderdelen',uniek:'er bestaat niets dat precies hetzelfde is'};
+const A={informeert:'informeren',verzint:'verzinnen',unieke:'uniek'};
+const F={informatie:['informeren','zn'],selectie:['selecteren','zn'],verantwoording:['verantwoorden','zn'],vervanger:['vervangen','zn'],volledig:['vervolledigen','bn'],verzinsel:['verzinnen','zn'],beweert:['de bewering','wv'],formuleren:['de formulering','wv'],situeren:['de situatie','wv'],automatiseren:['automatisch','wv'],interesse:['interessant','zn'],'geïnteresseerd':['interessant','bn'],uitbreiden:['uitgebreid','wv']};
+function info(a){a=n(a);const s=A[a]||a;if(BASE[s])return{self:1,b:BASE[s].d,k:BASE[s].k};if(F[a])return{self:0,b:F[a][0],k:F[a][1]}}
+function explain(a){const i=info(a);if(!i)return'';const m=M[n(i.b)];return i.self?'‘'+i.b+'’ betekent: '+m+'.':'‘'+a+'’ hoort bij het schooltaalwoord ‘'+i.b+'’ ('+m+').'}
+function lev(a,b){const d=[...Array(b.length+1).keys()];for(let i=1;i<=a.length;i++){let p=d[0];d[0]=i;for(let j=1;j<=b.length;j++){const t=d[j];d[j]=Math.min(d[j]+1,d[j-1]+1,p+(a[i-1]==b[j-1]?0:1));p=t}}return d[b.length]}
+function wrong(v){const x=n(v),i=info(it.a[0]),h=i?'Het gezochte woord is een '+CL[i.k]+'.'+(i.k=='wv'?' Let op de vorm van het woord.':''):'';
+ if(i&&x==n(i.b))return[i.self?'Bijna! Het woord zelf is goed, maar de vorm past niet in de zin.':'Je schreef het schooltaalwoord zelf. Zoek een ander woord uit de woordfamilie.',h];
+ if(it.a.some(a=>n(a).length>=5&&lev(n(a),x)<=2))return['Bijna juist! Controleer de spelling.',''];
+ if(BASE[x])return['‘'+esc(v.trim())+'’ is ook een schooltaalwoord, maar past hier niet. Lees de zin nog eens goed.',h];
+ return['Nog niet juist. Lees de zin nog eens goed.',h]}
+function fb(c,m,s){const f=$('#fb');f.className='fb '+c;f.innerHTML=m+(s?'<span>'+s+'</span>':'')}
+function go(){
+ if(lock){show();return}
+ const v=$('#in').value;if(!v.trim())return;
+ if(it.a.some(a=>n(a)===n(v))){
+  lock=true;q.shift();
+  if(it.e==0&&it.s==1)f1++;
+  if(it.e>0&&it.s<2){q.splice(Math.min(4,q.length),0,it);fb('ok','✓ Juist! Je krijgt deze oefening straks nog één keer.',explain(it.a[0]))}
+  else{done++;fb('ok','✓ Juist!',explain(it.a[0]))}
+ }else{
+  it.e++;(it.w=it.w||[]).push(v.trim());if(!log.includes(it))log.push(it);
+  if(it.e<2){const w=wrong(v);fb('bad','✗ '+w[0],w[1]);$('#in').select();return}
+  lock=true;q.shift();q.splice(Math.min(3,q.length),0,it);miss.add(it.a[0]);
+  fb('bad','✗ Het juiste antwoord is: '+it.a[0]+'. Je krijgt deze oefening straks opnieuw.',explain(it.a[0]));
+ }
+ $('#in').disabled=true;$('#go').textContent='Volgende';$('#go').focus();
+ $('.bar i').style.width=(done/total*100)+'%'}
+home();
+</script></body></html>
